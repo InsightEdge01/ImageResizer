@@ -1,0 +1,11 @@
+#Image Resizer Using Python
+from PIL import Image
+image_path = "input_image.jpg"
+output_path = "resized_image.jpg"
+max_width = 400
+max_height = 200
+
+image = Image.open(image_path)
+image.thumbnail((max_width,max_height))
+image.save(output_path)
+print("Image resized and saved")
